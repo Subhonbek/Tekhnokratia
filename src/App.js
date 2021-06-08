@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from "./Component/login/Login";
+import {Route} from "react-router";
+import Main from "./Component/main/Main";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(props) {
+    return (
+        <div className={'App'}>
+            <Route exact path={'/'} render={() => <Login/>}/>
+            <Route path={'/main/'} render={() => <Main state={props.state}/>}/>
+        </div>
+    );
 }
 
 export default App;
