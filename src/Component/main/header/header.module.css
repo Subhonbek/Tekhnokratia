@@ -1,0 +1,21 @@
+.header{
+  height: 50px;
+  background: #ddd;
+  display: grid;
+  grid-template-columns: minmax(50px,100px) minmax(150px,200px) minmax(100px,200px);
+  margin-bottom: 40px;
+}
+.header div{
+  margin: 10px;
+}
+.header a{
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  text-decoration: none;
+
+}
+.header a.active {
+  color: black;
+  border-bottom: solid 2px #1d5599;
+}

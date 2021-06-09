@@ -1,6 +1,6 @@
 import st from './all.module.css'
 import {NavLink} from "react-router-dom";
-import Modal from "../Modal/Modal";
+import Modal from "./Modal/Modal";
 import {useState} from "react";
 
 const All = (props) => {

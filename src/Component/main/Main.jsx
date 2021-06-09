@@ -1,6 +1,7 @@
 import st from './main.module.css'
 import {NavLink} from "react-router-dom";
 import All from "./all/All";
+import Header from "./header/Header";
 
 
 const Main = (props) => {
@@ -15,19 +16,7 @@ const Main = (props) => {
                                                       mname={d.mname}/>)
     return (
         <div>
-            <header className={st.header}>
-                <div>
-                    <NavLink to={'/main/all'} activeClassName={st.active}>Все</NavLink>
-                </div>
-
-                <div>
-                    <NavLink to={'/main/Blocked'} activeClassName={st.active} >Заблокированные</NavLink>
-                </div>
-
-                <div>
-                    <NavLink to={'/main/Active'} activeClassName={st.active} >Активные</NavLink>
-                </div>
-            </header>
+            <Header/>
             <div>
                 {allElement}
             </div>
