@@ -1,0 +1,22 @@
+select {
+  padding: 5px;
+  width: 150px;
+  height: 35px;
+  border: 1px solid #CCC;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://cdn3.iconfinder.com/data/icons/outline-style-1/512/double-arrow-bottom-512.png) 96% / 15% no-repeat #EEE;
+}
+
+
+select::-ms-expand {
+  display: none;
+}
+
+@media screen and (min-width:0\0) {
+  select {
+    background: none\9;
+    padding: 5px\9;
+  }
+}

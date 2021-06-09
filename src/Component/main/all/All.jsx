@@ -15,7 +15,11 @@ const All = (props) => {
                 </div>
                 <div className={st.balance} > {'Баланс: ' +props.balance} </div>
                 <div className={st.time}> {props.lastUpdatedAt} </div>
-                <div className={st.subscription}> {props.status} </div>
+                <select>
+                    <option>Подписка Активна</option>
+                    <option>Приостановлено</option>
+                    <option>Заблокировано</option>
+                </select>
             </div>
             <Modal active = {modalActive} setActive={setModalActive} state = {props}/>
         </div>

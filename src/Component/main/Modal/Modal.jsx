@@ -1,5 +1,5 @@
 import st from './modal.module.css'
-
+import './select.css'
 const Modal = (props) => {
     debugger
     return (
@@ -11,11 +11,11 @@ const Modal = (props) => {
                     <div>{props.state.fname}</div>
                     <div>{props.state.mname}</div>
                     <select>
-                        <option>Подписка активна</option>
-                        <option>Приостоновлено</option>
-                        <option>Заблокирован</option>
+                        <option>Подписка Активна</option>
+                        <option>Приостановлено</option>
+                        <option>Заблокировано</option>
                     </select>
-                    <div className={st.save}> Сохранить </div>
+                    <div className={st.save}> Сохранить</div>
                 </div>
             </div>
         </div>
